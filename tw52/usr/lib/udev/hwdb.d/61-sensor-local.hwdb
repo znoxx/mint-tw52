@@ -1,0 +1,12 @@
+# Allowed properties are:
+#    ACCEL_MOUNT_MATRIX=<matrix>
+#
+# where <matrix> is a mount-matrix in the format specified in the IIO
+# subsystem[1]. The default, when unset, is equivalent to:
+#   ACCEL_MOUNT_MATRIX=1, 0, 0; 0, 1, 0; 0, 0, 1
+# eg. the identity matrix.
+#
+
+sensor:modalias:acpi:BOSC0200:BOSC0200:dmi:*:svnIRBIS:pnTW52:*
+ ACCEL_MOUNT_MATRIX=0, 1, 0; -1, 0, 0; 0, 0, 1
+
